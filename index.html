@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyDesk</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6fb;
+            color: #1e293b;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px 30px;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000010;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>StudyDesk</h1>
+        <p>Your personal student productivity manager</p>
+    </header>
+
+    <main>
+        <h2>Dashboard</h2>
+        <p>Welcome! Let's organize your university life.</p>
+
+        <div class="card">
+            <h3>My Assignments</h3>
+            <p>Keep track of your assignments and deadlines.</p>
+            <button id="addTask">Add Assignment</button>
+        </div>
+
+        <div class="card">
+            <h3>My Study Progress</h3>
+            <p>Your productivity statistics will appear here.</p>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('addTask').addEventListener('click', () => {
+            alert('Task management is coming soon!');
+        });
+    </script>
+</body>
+</html>
