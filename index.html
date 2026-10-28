@@ -61,6 +61,9 @@
             <h3>My Assignments</h3>
             <p>Keep track of your assignments and deadlines.</p>
             <button id="addTask">Add Assignment</button>
+
+            <button id ="startStudy">Start Studing</button>
+            <p id ="status">Not Started</p>
         </div>
 
         <div class="card">
@@ -72,7 +75,23 @@
     <script>
         document.getElementById('addTask').addEventListener('click', () => {
             alert('Task management is coming soon!');
-        });
+    });
+
+        const studyButton = document.getElementById('startStudy');
+        const status = document.getElementById('status');
+
+        let clickcount = 0;
+
+        studyButton.addEventListener('click', () => {
+            clickcount++;
+            if(clickcount%2===0) {
+                status.textContent = "Study session stopped!";
+            }
+            else {
+                status.textContent = "Study session started!";
+            }
+        // status.textContent = 'Time to focus!';
+    });
     </script>
 </body>
 </html>
