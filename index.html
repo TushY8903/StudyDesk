@@ -86,9 +86,13 @@
             clickcount++;
             if(clickcount%2===0) {
                 status.textContent = "Study session stopped!";
+                studyButton.textContent = "Start studing";
+                studyButton.style.backgroundColor = "blue";
             }
             else {
                 status.textContent = "Study session started!";
+                studyButton.textContent = "Stop studing";
+                studyButton.style.backgroundColor = "red";
             }
         // status.textContent = 'Time to focus!';
     });
